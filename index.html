@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haladaze</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ff3300'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #ffedd5;
+        }
+        .main-box {
+            max-width: 990px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .site-header {
+            background-color: #ffffff;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+            position: relative;
+            overflow: hidden;
+        }
+        .header-wave {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 55%;
+            pointer-events: none;
+        }
+        .site-logo {
+            height: 76px;
+            width: auto;
+            position: relative;
+            z-index: 1;
+        }
+        .site-nav {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ff5500;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        .site-nav a:hover {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+        .main-content {
+            font-family: Verdana, Geneva, sans-serif;
+        }
+        .welcome-title {
+            color: #ff5500;
+            font-size: 32px;
+            line-height: 1.2;
+        }
+        .times-italic {
+            font-family: "Times New Roman", Times, serif;
+            font-style: italic;
+            color: #000000;
+        }
+        .sky-banner {
+            width: 100%;
+            max-width: 680px;
+            height: auto;
+        }
+        .news-bar {
+            background: linear-gradient(90deg, #ff7722 0%, #992200 100%);
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
+        }
+        .site-footer {
+            border-top: 1px solid #000000;
+            font-family: "Times New Roman", Times, serif;
+            color: #000000;
+        }
+        .social-icon {
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body class="min-h-screen w-full m-0 px-4 flex justify-center">
+    <div class="main-box w-full min-h-screen flex flex-col">
+        <header class="site-header w-full px-5 py-2 flex items-center">
+            <img src="https://raw.githubusercontent.com/intergalaxity/assets/refs/heads/main/LogoHaladaze.png" alt="Haladaze" class="site-logo object-contain" onerror="this.src='https://placehold.co/240x76/ffffff/ff3300?text=Haladaze'">
+            <svg class="header-wave" viewBox="0 0 500 100" preserveAspectRatio="none">
+                <path d="M 415 0 L 500 0 L 500 100 L 15 100 Q 255 72 415 0 Z" fill="#ff5500"/>
+                <path d="M 500 48 L 500 100 L 15 100 Q 295 92 500 48 Z" fill="#ffbb88"/>
+            </svg>
+        </header>
+        <nav class="site-nav w-full px-6 py-2.5 flex flex-wrap justify-between items-center text-sm tracking-wide">
+            <a href="https://haladaze.org/">Home</a>
+            <a href="https://haladaze.org/services">Services</a>
+            <a href="https://haladaze.org/about">About</a>
+            <a href="https://haladaze.org/team">The Team</a>
+            <a href="https://haladaze.org/contact">Contact</a>
+            <a href="https://blog.haladaze.org/">Blog</a>
+            <a href="https://haladaze.org/search">Search</a>
+        </nav>
+        <main class="main-content w-full px-6 py-6 flex-1 flex flex-col items-start text-left">
+            <h1 class="welcome-title font-bold mb-3">Welcome to Haladaze</h1>
+            <p class="times-italic text-lg mb-3">You're pronouncing it wrong.</p>
+            <p class="times-italic text-lg mb-3">We're a group/company that makes services &amp; software for the greater good of the internet as we know it today.</p>
+            <p class="times-italic text-lg mb-5">Hate how the web is right now? You've come to the right place. We welcome you with open arms.</p>
+            <img src="https://raw.githubusercontent.com/intergalaxity/assets/refs/heads/main/sky1.png" alt="Haladaze Sky" class="sky-banner object-contain mb-6" onerror="this.src='https://placehold.co/680x260/ffedd5/ff5500?text=Sky+Banner'">
+            <div class="news-bar w-full px-4 py-2 text-2xl tracking-wide">Latest news</div>
+          <p class="times-italic text-lg mb-5">Nothing here yet. Sorry!</p>
+        </main>
+        <footer class="site-footer w-full px-6 py-4 flex flex-wrap justify-between items-center gap-4">
+            <div class="text-base">2019 - 2026 Haladaze</div>
+            <div class="flex items-center gap-3">
+                <a href="https://instagram.com/haladazeorg" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="https://222.rehab/img/social/instagram.png" alt="" class="social-icon">
+                </a>
+                <a href="https://twitter.com/haladaze" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <img src="https://222.rehab/img/social/twitter.png" alt="" class="social-icon">
+                </a>
+                <a href="https://bsky.app/profile/haladaze.org" target="_blank" rel="noopener noreferrer" aria-label="Bluesky">
+                    <img src="https://222.rehab/img/social/bluesky.png" alt="" class="social-icon">
+                </a>
+                <a href="https://youtube.com/@haladaze" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <img src="https://222.rehab/img/social/youtube.png" alt="" class="social-icon">
+                </a>
+                <a href="https://twitch.tv/haladaze" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
+                    <img src="https://222.rehab/img/social/twitch.png" alt="" class="social-icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
